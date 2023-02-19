@@ -1,9 +1,12 @@
 ﻿// Найти расстояние между точками в пространстве 2D/3D
 
 
-int numPlan = 2;            // количество осей координат
-int min = -5;               // минимальное значение диапазона для выбора случайных чисел
-int max = 6;                // максимальное значение диапазона ...
+Console.WriteLine("Введите количество осей координат:");
+int numPlan = int.Parse(Console.ReadLine()?? "");
+Console.WriteLine("Введите минимальное значение диапазона случайных чисел:");
+int min = int.Parse(Console.ReadLine()?? "");
+Console.WriteLine("Введите максимальное значение диапазона случайных чисел:");
+int max = int.Parse(Console.ReadLine()?? "");
 
 int[] PointCoords(int numPlan)                  
 {
